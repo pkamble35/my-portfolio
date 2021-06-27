@@ -1,6 +1,6 @@
 import { MenuItems } from "./MenuItem";
 import React, { Component } from 'react';
-
+import "./styles.css";
 class Navbar extends Component {
     render() {
         // You can use them as regular CSS styles
@@ -18,7 +18,7 @@ class Navbar extends Component {
                         <ul className="navbar-nav ml-auto">
                             {MenuItems.map((item, index) => {
                                 return (
-                                    <li className="nav-item">
+                                    <li className="nav-item" key={index}>
                                         <a className={item.css} href={item.link}>{item.name}</a>
                                     </li>
                                 )
