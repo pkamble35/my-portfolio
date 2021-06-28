@@ -1,6 +1,6 @@
 import { MenuItems } from "./MenuItem";
 import React, { Component } from 'react';
-import "./styles.css";
+import "../../App.css";
 class Footer extends Component {
     render() {
         // You can use them as regular CSS styles
