@@ -3,14 +3,21 @@ import './App.css';
 import Navbar from "./component/navbar/Navbar";
 import Footer from "./component/navbar/Footer";
 import About from "./component/About";
-
+import Portfolio from "./component/Portfolio";
+import Contact from './component/Contact';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <About/>
-      <Footer/>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch >
+        <Route path="/" component={About} exact />
+        <Route path="/About" component={About} exact />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

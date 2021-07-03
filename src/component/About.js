@@ -18,7 +18,7 @@ class About extends Component {
                                 Innovative problem-solver who is passionate about developing
                                 apps with a focus on responsive design and development. Strengths in creativity, teamwork, and building
           projects from ideation to execution.<br />
-                                <strong>Technologies: </strong>HTML, CSS, Javascript, Jquery, Bootstrap, Node.js, Express.js, MySql Server, Heroku.<br />
+                                <strong>Technologies: </strong>HTML, CSS, Javascript, Jquery, Bootstrap,React.js, Node.js, Express.js, MySql Server, Heroku.<br />
 
                             </p>
                         </div>
@@ -27,7 +27,7 @@ class About extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-sm">
-                                        <a href="https://www.linkedin.com/in/priyanka-damodar-54a3359a/" target="_blank"
+                                        <a href="https://www.linkedin.com/in/priyanka-damodar-54a3359a/" target="_blank" rel="noreferrer"
                                             className="col dark-gray width-120">
                                             <i className="fa fa-fw fa-2x fa-linkedin-square valign-middle"></i>
                                             <span className="h5 header-font">LinkedIn</span>
@@ -36,7 +36,7 @@ class About extends Component {
                                 </div>
                                 <div className="row">
                                     <div className="col-sm">
-                                        <a href="https://github.com/pkamble35" target="_blank" className="col dark-gray width-120">
+                                        <a href="https://github.com/pkamble35" target="_blank" rel="noreferrer" className="col dark-gray width-120">
                                             <i className="fa fa-fw fa-2x fa-github-square valign-middle"></i>
                                             <span className="h5 header-font">GitHub</span>
                                         </a>

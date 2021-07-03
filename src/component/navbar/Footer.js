@@ -1,4 +1,4 @@
-import { MenuItems } from "./MenuItem";
+
 import React, { Component } from 'react';
 import "../../App.css";
 class Footer extends Component {
