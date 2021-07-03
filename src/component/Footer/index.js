@@ -6,7 +6,7 @@ class Footer extends Component {
         // You can use them as regular CSS styles
         return (
             <footer className="mt-auto">
-            <div>
+            <div className="container justify-content-center">
               <span className="text-muted">©copyright</span>
             </div>
           </footer>
