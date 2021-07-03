@@ -1,4 +1,4 @@
-
+import { MenuItems } from "./MenuItem";
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../../App.css";
@@ -8,25 +8,18 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light" >
                 <a className="navbar-brand" href="/#">Priyanka Kamble</a>
-                        <div className="navbar " id="navbarNav">
-                        <NavLink
-                                to="/about"
-                                className="nav-link"
-                            >
-                                About
-                                </NavLink>
+                <div className="navbar " id="navbarNav">
+                    {MenuItems.map((item, index) => {
+                        return (
                             <NavLink
-                                to="/portfolio"
-                                className="nav-link"
+                                to={item.link}
+                                className={item.css} key={index}
                             >
-                                Portfolio
-                         </NavLink>
-                            <NavLink
-                                to="/contact"
-                                className="nav-link"
-                            >
-                                Contact
-                         </NavLink>
+                                {item.name}
+                            </NavLink>
+                        )
+                    })
+                    }
                 </div>
             </nav>
         );
